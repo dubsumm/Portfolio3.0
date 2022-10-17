@@ -40,7 +40,7 @@ export default function Contact() {
                 ></textarea>
                 <button
                   type="submit"
-                  className=" subbtn mt-10 "
+                  className=" subbtn mt-10 uppercase aboutp"
                 >
                   Submit
                 </button>
@@ -48,6 +48,7 @@ export default function Contact() {
             </div>
           </div>
         </form>
+        <div className="h-96"></div>
       </div>
     </div>
   );

@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Sora&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Slab&family=Noto+Serif:wght@700&display=swap');
 * {
     font-family: 'Sora', sans-serif;
     box-sizing: border-box;
@@ -15,25 +14,78 @@ p {
 .avatar {
     height: 90px;
 }
+/* FOOTER STYLING */
+
+.foot {
+  background:#441944;
+  color: #0078d7;
+  height: 90px;
+  width: 100%;
+  flex-shrink: 0;
+  font-size: 1rem;
+  position: fixed;
+  bottom: 0;
+  z-index: 10;
+}
+
+.footp {
+  color: #0078d7;
+  font-weight:lighter
+}
+
 
 /* HOME STYLING */
 
-.homePage {
+.homePage1 {
   background: url(./assets/mountainBG.jpg) no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;
+  height: 90vh;
   
 }
 
+
+.homePage {
+  background: url(./assets/mountainBG.jpg) no-repeat center center fixed;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;
+}
+  
+.homeQuote {
+  font-family: 'Josefin Slab', serif;
+  font-weight: 600;
+  font-size: 2rem;
+  color:white;
+}
+
+.homep {
+  font-family: 'Josefin Slab', serif;
+  color: #fff;
+  font-size: 1rem;
+}
+
+.homep1 {
+  font-family: 'Josefin Slab', serif;
+  color: #fff;
+  font-size: .9rem;
+}
+
+
+
 .contactBG {
-    height: 100vh;
+    
     background: #250e25;
+    background-size: cover;
 }
 .secBG {
-  height: cover;
-  background: #250e25;
+  background: #130417;
+  border: 2px solid #8a1e36;
+  border-radius: 60px 30px 60px 30px / 2px 30px 12px 30px;
+  
 }
 .headersBG {
   background: #6e1448;
@@ -42,34 +94,24 @@ p {
   background: #250e25;
 }
 
+.color1 {
+color: #ff8b5b;
+}
+
+.color2 {
+  color: #d83554;
+}
+
+.color3 {
+  color: #fbd7c1;
+}
+
+.color4 {
+  color: #ffefef;
+}
+
 /* ABOUT STYLING */
 
-.aboutIcon1 {
-    padding-bottom: 10px;;
-    padding-top: 10px;
-    height: 60px;
-    color: #98064a;
-    margin: 0 auto;
-    
-}
-
-.aboutIcon2 {
-  padding-bottom: 10px;;
-  padding-top: 10px;
-  height: 60px;
-  color: #d62d54;
-  margin: 0 auto;
-  
-}
-
-.aboutIcon3 {
-  padding-bottom: 10px;;
-  padding-top: 10px;
-  height: 60px;
-  color: #ec6d4a;
-  margin: 0 auto;
-  
-}
 
 .aboutIcon {
   padding-bottom: 10px;;
@@ -81,10 +123,43 @@ p {
 }
 
 .aboutp {
-    display: flex;
-    justify-self: enter;
-    font-size: 1.1rem;
+    
+    font-family: 'Josefin Slab', serif;
+    font-weight: 600;
+    
+    font-size: 1.2rem;
     color:white;
+}
+
+.icon {
+  width: 5rem;
+  padding:2px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 2px 3px black;
+  transition: transform .2s;
+}
+.skilltext {
+  width: 87.5%;
+}
+.icon:hover {
+  transform: scale(1.2);
+}
+
+
+/* PORTFOLIO STYLING */
+
+.portSynopsisBG {
+  background: #ffefef;
+  
+}
+
+.portButtons {
+  background-color: #d83554;
+  padding: 8px;
+  border: 2px solid white;
+  border-radius: 4px 6px;
+  margin-top: .5rem;
 }
 
 /* CONTACT STYLING */
@@ -153,9 +228,28 @@ p {
   .homePage {
     background-image: none;
     background: #250e25;
+    background-size: cover;
+  }
+  .homePage1 {
+    background-image: none;
+    background: #250e25;
+    background-size: cover;
   }
 
   .secBG {
     background: #5f1647;
+  }
+
+  .aboutIcon {
+    color: #ff8b5b;
+  }
+
+  .icon {
+    width: 4rem;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .foot {
+    height: 150px;
   }
 }

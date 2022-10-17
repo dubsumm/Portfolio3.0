@@ -4,7 +4,7 @@ import styled from 'styled-components'
 
 
 export const Nav = styled.nav`
-  background: linear-gradient(0deg, rgba(251,200,183,1) 0%, rgba(238,160,88,1) 50%, rgba(237,141,83,1) 100%);
+  background: #ea7748;
   height: 90px;
   display: flex;
   justify-content: center;

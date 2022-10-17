@@ -15,7 +15,7 @@ const Navbar = ({ toggle }) => {
       <Nav>
         <NavbarContainer>
           <NavLink className="text-uppercase" to="/">
-            Will's Site
+            Home
           </NavLink>
           <MobileIcon onClick={toggle}>
             <FaBars />
