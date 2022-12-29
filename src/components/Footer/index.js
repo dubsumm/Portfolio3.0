@@ -1,46 +1,35 @@
 import React from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { Link } from "react-router-dom";
+
+import { Foot, FooterContainer, FootLink, NavLink } from "./FooterElements";
+import {} from "@fortawesome/fontawesome-svg-core"
+import {} from "@fortawesome/free-solid-svg-icons"
+import {} from "@fortawesome/free-regular-svg-icons"
 
 
 
 const Footer = () => {
   return (
-    <div className="foot grid  grid-cols-1 sm:grid-cols-3 ">
-
-      <div className=" text-left my-auto ml-5 ">
-        <p className="footp my-auto ml-10">
-          Made with ❤️ by Will Summerlin ©
-        </p>
-      </div>
-      <div className="grid grid-cols-3 gap-2 h-10/12 m-auto">
-        <div className=" card" class="icon">
-          <a href="https://github.com/dubsumm" target="_blank">
-            <img
-              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original-wordmark.svg"
-              alt="github"
-            />
-          </a>
+    <Foot>
+      <FooterContainer>
+        <div className=" w-1/4 text-left text-s">
+            Made with ❤️ by Will Summerlin ©
+            </div>
+          <div className="w-1/2 text-center">
+            <FootLink href="https://github.com/dubsumm" target="_blank" rel='noreferrer'>
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original-wordmark.svg" alt="Github"/>
+            </FootLink>
+            <FootLink href="https://www.linkedin.com/in/willsummerlin2022/" target="_blank" rel='noreferrer'>
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-plain.svg" alt='linkedIn' />
+            </FootLink>
+            
+            </div>
+            <div className="w-1/4 text-right">
+              <p className="text-s">My Anthem</p>
+        <a href="https://www.youtube.com/watch?v=L93-7vRfxNs" target="_blank" rel='noreferrer' >▶️</a>
         </div>
-
-        <div class="icon">
-          <a
-            href="https://www.linkedin.com/in/willsummerlin2022/"
-            target="_blank"
-          >
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original-wordmark.svg" />
-          </a>
-        </div>
-
-        <div className="icon">
-          <Link to="/contact">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/google/google-original.svg" />
-          </Link>
-        </div>
-       
-      </div>
-      <div className=" m-auto text-right md:mr-7"> For the truly cultured <a href="https://www.youtube.com/watch?v=L93-7vRfxNs" target="_blank">▶️</a></div>
-    </div>
+      </FooterContainer>
+    </Foot>
   );
 };
 

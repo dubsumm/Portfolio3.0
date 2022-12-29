@@ -1,23 +1,33 @@
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Slab&family=Noto+Serif:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Roboto+Flex:opsz,wght@8..144,200&family=Sora&display=swap');
 * {
-    font-family: 'Sora', sans-serif;
+  font-family: 'Montserrat', sans-serif;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    color: rgb(27, 27, 27);
+    
+
 
 }
-
-p {
-  color:#08203d;
+h1 {
+  color: white;
 }
 
+
+
+.homePage {
+  min-width: 100vw;
+  min-height: 180vh;
+  background: #fff6eb;
+  background-size: contain;
+}
 .avatar {
     height: 90px;
 }
 /* FOOTER STYLING */
 
 .foot {
-  background:#441944;
+  
   color: #0078d7;
   height: 90px;
   width: 100%;
@@ -25,118 +35,64 @@ p {
   font-size: 1rem;
   position: fixed;
   bottom: 0;
-  z-index: 10;
+  z-index: 1;
 }
 
-.footp {
-  color: #0078d7;
-  font-weight:lighter
-}
+
+
 
 
 /* HOME STYLING */
 
-.homePage1 {
-  background: url(./assets/mountainBG.jpg) no-repeat center center fixed;
-  -webkit-background-size: contain;
-  -moz-background-size: contain;
-  -o-background-size: contain;
-  background-size: contain;
-  height: 90vh;
-  
+
+.hmNew {
+  position: relative;
+  background-color: #87956d;
+  box-shadow: 3px 2px 2px rgb(44, 44, 44);
+
 }
 
 
-.homePage {
-  background: url(./assets/mountainBG.jpg) no-repeat center center fixed;
-  -webkit-background-size: contain;
-  -moz-background-size: contain;
-  -o-background-size: contain;
-  background-size: contain;
-}
-  
-.homeQuote {
-  font-family: 'Josefin Slab', serif;
-  font-weight: 600;
-  font-size: 2rem;
-  color:white;
-}
-
-.homep {
-  font-family: 'Josefin Slab', serif;
-  color: #fff;
-  font-size: 1rem;
-}
-
-.homep1 {
-  font-family: 'Josefin Slab', serif;
-  color: #fff;
-  font-size: .9rem;
-}
-
-
-
+/* CONTACT STYLING */
 .contactBG {
-    
-    background: #250e25;
+    color: #000;
+    background: #fff6eb;
     background-size: cover;
+    
 }
-.secBG {
-  background: #130417;
-  border: 2px solid #8a1e36;
-  border-radius: 60px 30px 60px 30px / 2px 30px 12px 30px;
-  
-}
+
 .headersBG {
-  background: #6e1448;
+  background: #fff6eb;
 }
 .formBG {
-  background: #250e25;
+  background: #fff6eb;
 }
 
-.color1 {
-color: #ff8b5b;
-}
-
-.color2 {
-  color: #d83554;
-}
-
-.color3 {
-  color: #fbd7c1;
-}
-
-.color4 {
-  color: #ffefef;
-}
 
 /* ABOUT STYLING */
 
 
 .aboutIcon {
-  padding-bottom: 10px;;
+  padding-bottom: 10px;
+  
   padding-top: 20px;
   height: 60px;
-  color: #441944;
+  color: black;
   margin: 0 auto;
   
 }
 
 .aboutp {
     
-    font-family: 'Josefin Slab', serif;
-    font-weight: 600;
-    
+    font-family: 'Roboto Flex', sans-serif;
     font-size: 1.2rem;
-    color:white;
+    color:#203349;
 }
 
 .icon {
+  
   width: 5rem;
   padding:2px;
-  background-color: #fff;
-  border-radius: 8px;
-  box-shadow: 2px 3px black;
   transition: transform .2s;
 }
 .skilltext {
@@ -150,16 +106,38 @@ color: #ff8b5b;
 /* PORTFOLIO STYLING */
 
 .portSynopsisBG {
-  background: #ffefef;
+  background: #c4b096;
+  box-shadow: 3px 2px 2px;
   
 }
 
 .portButtons {
-  background-color: #d83554;
-  padding: 8px;
-  border: 2px solid white;
-  border-radius: 4px 6px;
+  transition: all 0.5s;
+  color:black;
+  background-color: transparent;
+  padding: 1rem;
+  border: 2px solid #87956d;
+  border-radius: 7px;
+  box-shadow: 2px 1px 1px rgb(44, 44, 44);
   margin-top: .5rem;
+}
+.portButtons:hover {
+  
+  
+  background-color: #87956d;
+}
+
+.portButtons::after {
+  transition: 3s;
+  color: transparent;
+}
+.portButtonText {
+  transition: all 0.5s;
+  text-decoration: none;
+  color:black;
+}
+.portButtonText:hover {
+  color: #fff;
 }
 
 /* CONTACT STYLING */
@@ -168,16 +146,12 @@ color: #ff8b5b;
   padding-top: 15px;
   padding-bottom: 15px;
   padding-left: 29px;
-  padding-right: 29px;
-  border-radius: 10% 25%;
-  color: #ff8b5b;  
-}
-
-.subbtn {
-  color: #FFF;
+  padding-right: 29px; 
+  color: black;
   transition: all 0.5s;
   position: relative; 
 }
+
 .subbtn span {
   z-index: 2; 
   display: block;
@@ -194,7 +168,7 @@ color: #ff8b5b;
   height: 100%;
   z-index: 1;
   transition: all 0.5s ease 0.2s;
-  border: 1px solid #ff8b5b;
+  border: 1px solid #87956d;
   background-color: rgba(255,255,255,0.1);
 }
 .subbtn::after {
@@ -206,7 +180,7 @@ color: #ff8b5b;
   height: 100%;
   z-index: 1;
   transition: all 0.5s ease 0.2s;
-  border: 1px solid #ff8b5b;
+  border: 1px solid #87956d;
   background-color: rgba(255,255,255,0.1);
 }
 .subbtn:hover::before {
@@ -225,31 +199,22 @@ color: #ff8b5b;
 }
 
 @media only screen and (max-width: 1024px) {
-  .homePage {
-    background-image: none;
-    background: #250e25;
-    background-size: cover;
-  }
-  .homePage1 {
-    background-image: none;
-    background: #250e25;
-    background-size: cover;
-  }
-
-  .secBG {
-    background: #5f1647;
-  }
-
-  .aboutIcon {
-    color: #ff8b5b;
-  }
-
-  .icon {
-    width: 4rem;
-  }
+  
+  
 }
 @media only screen and (max-width: 768px) {
   .foot {
     height: 150px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+
+  .hmNew{
+   
+    width: 80vw;
+    left: 10%;
+    top: 30%;
+
   }
 }

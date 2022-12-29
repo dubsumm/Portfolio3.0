@@ -4,7 +4,7 @@ import styled from 'styled-components'
 
 
 export const Nav = styled.nav`
-  background: #ea7748;
+  background: #fff6eb;
   height: 90px;
   display: flex;
   justify-content: center;
@@ -30,7 +30,8 @@ max-width: 1600px;
 `
 
 export const NavLink = styled(Link)`
-  color: #fff;
+  color: #87956d;
+  
   display: flex;
   align-items: center;
   text-decoration: none;
@@ -48,15 +49,16 @@ export const NavLink = styled(Link)`
   &.active {
     transition: all .5s ease .2s;
   transition: 0.5s;
-    // border: 5px solid #ff8b5b;
-    background: #ec554a;
-    // color: #ff8b5b;
+  border-radius: 10px;
+  box-shadow: 2px 1px 1px rgb(44, 44, 44);
+    background: #87956d;
+    color: #f1ede7;
 
   }
 `
 export const MobileIcon = styled(FaBars)`
   display: none;
-  color: #fff;
+  color: #87956d;
   @media screen and (max-width: 768px) {
     display: block;
     position: absolute;

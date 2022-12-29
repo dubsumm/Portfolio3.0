@@ -1,7 +1,10 @@
+
+
 export default function Contact() {
+
   return (
     <div className=" homePage " id="contact">
-      <h2 className=" text-center text-uppercase text-white p-4 m-auto headersBG sm:w-full w-10/12">
+      <h2 className=" text-center text-uppercase  p-4 m-auto headersBG sm:w-full w-10/12">
         Hit me up!
       </h2>
       <div className=" sm:w-8/12 w-10/12 m-auto pt-24  contactBG">
@@ -40,7 +43,7 @@ export default function Contact() {
                 ></textarea>
                 <button
                   type="submit"
-                  className=" subbtn mt-10 uppercase aboutp"
+                  className=" subbtn mt-10 uppercase font-bold "
                 >
                   Submit
                 </button>

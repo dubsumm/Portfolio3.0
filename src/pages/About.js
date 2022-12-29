@@ -1,36 +1,34 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faCoffee,
-  faDragon,
-  faHome,
   faKeyboard,
+  faAnglesUp
 } from "@fortawesome/free-solid-svg-icons";
 
 export default function About() {
+
   return (
     <div className="homePage ">
-      <div className="grid grid-cols-4">
-        <div className="text-center"></div>
-        <div className="text-center"></div>
-      </div>
-      <div className=" sm:w-1/3 w-10/12 secBG shadow-lg  p-3 mx-auto my-12 ">
-        <p className="aboutp mx-auto text-center">
+      <FontAwesomeIcon
+            icon={faAnglesUp}
+            className="aboutIcon text-center"
+          />
+      <div className=" sm:w-1/3 w-10/12   py-5 mx-auto ">
+        <p className="aboutp">
           Hi there I'm Will Summerlin, creator of this site! I am a Savannah, GA
           native and proud husband to my wife Sammie. I love weight lifting,
           e-sports, and I am an avid Sci-fi/Fantasy reader.
         </p>
       </div>
-      <div className=" grid sm:grid-cols-4 grid-cols-1 gap-4 pt-6 pb-32">
-        <div className="my-auto sm:inline hidden text-right ">
+      
+        <div>
+        <div className="sm:w-1/3 w-10/12   mx-auto text-center">
           <FontAwesomeIcon
             icon={faKeyboard}
-            className="aboutIcon "
+            className="aboutIcon text-center"
           />
         </div>
-        <div className="m-auto  sm:hidden inline">
-          <FontAwesomeIcon icon={faKeyboard} className="aboutIcon" />
-        </div>
-        <div className="sm:col-span-2 col-span-1 secBG rounded shadow-lg  pr-6 pl-6 pt-8 pb-2">
+        <div className="sm:w-1/3 w-10/12   py-3 mx-auto">
           <p className="aboutp">
             {" "}
             In January of 2022 I changed jobs to a remote sales position and had
@@ -45,16 +43,12 @@ export default function About() {
             plowed headlong on an adventure to become a digital builder.
           </p>
         </div>
-        <div className="my-auto sm:text-left  sm:inline hidden">
-          <FontAwesomeIcon icon={faKeyboard} className="aboutIcon" />
-        </div>
-        <div className="m-auto  sm:hidden inline">
+        
+        <div className="sm:w-1/3 w-10/12 mx-auto text-center">
           <FontAwesomeIcon icon={faCoffee} className="aboutIcon" />
         </div>
-        <div className=" my-auto sm:text-right sm:inline hidden">
-          <FontAwesomeIcon icon={faCoffee} className="aboutIcon" />
-        </div>
-        <div className="sm:col-span-2 col-span-1 secBG rounded shadow-lg  pr-6 pl-6 pt-8 pb-2">
+        
+        <div className="sm:w-1/3 w-10/12   py-3 mx-auto">
           <p className="aboutp ">
             My (caffeinated) journey so far has brought me through my first full
             time coding program with the Georgia Institute of Technology. After
@@ -63,27 +57,12 @@ export default function About() {
             the confidence to call myself a full stack developer!
           </p>
         </div>
-        <div className="my-auto sm:inline hidden">
-          <FontAwesomeIcon
-            icon={faCoffee}
-            className="aboutIcon "
-          />
-        </div>
+
       </div>
       <div>
       <div className="sm:w-1/4 w-10/12 mx-auto text-center uppercase secBG rounded text-white pt-2 mb-5">
-        <h1 className=" font-extrabold">
-          <span className=" color4">m</span>
-          <span className="color1">y</span>
-          <span className="color2"> t</span>
-          <span className="color3">e</span>
-          <span className="color4">c</span>
-          <span className="color1">h</span>
-          <span className="color2"> s</span>
-          <span className="color3">t</span>
-          <span className="color4">a</span>
-          <span className="color1">c</span>
-          <span className="color2">k</span>
+        <h1 className=" font-extrabold text-black">
+         My Tech Stack
           </h1>
       </div>
       </div>
@@ -93,7 +72,7 @@ export default function About() {
           <div></div>
         <div className="  skilltext secBG sm:col-span-4 rounded col-span-3 text-center p-2 mb-5">
             <p className="aboutp">
-              This is the current tech stack I feel I have a good grasp on. Check it
+              This is my current tech stack. Check it
               out later as I continue to upskill!
             </p>
           </div>
@@ -193,9 +172,7 @@ export default function About() {
           </div>
         </div>
       </div>
-      <hr></hr>
-      <hr></hr>
-      <hr></hr>
+      
     </div>
   );
 }

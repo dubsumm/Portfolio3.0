@@ -1,9 +1,12 @@
 import {useState} from "react";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+
 import './App.css'
 import {
   HashRouter as Router,
   Routes,
-  Route
+  Route,
+  
 } from "react-router-dom";
 import Navbar from './components/NavBar'
 import Home from './pages'
@@ -12,16 +15,21 @@ import Portfolio from './pages/Portfolio'
 import Contact from './pages/Contact'
 import Sidebar from './components/Sidebar';
 import Footer from './components/Footer'
+import ScrollToTop from "./components/ScrollToTop";
+
 
 export default function App() {
 
   const [isOpen, setIsOpen] = useState(false)
 const toggle = () => {
   setIsOpen(!isOpen)
+
 }
+
   return (
     <div>
       <Router>
+      <ScrollToTop/>
       <Sidebar isOpen={isOpen} toggle={toggle}/>
       <Navbar toggle={toggle}/>
           <div>
