@@ -24,7 +24,7 @@ export default function Home() {
               <img src={Pic} className="rounded" alt="Will" />
             </div>
           </Animator>
-          <Animator animation={batch(Fade(), Sticky(50,60), MoveIn(-300, 0), MoveOut(-500, 0))}>
+          <Animator animation={batch(Fade(), Sticky())}>
             <div className="hmNew p-3 rounded">
               <h3 className="text-white">Hiya! I'm Will and I program... all kinds of stuff</h3>
             </div>

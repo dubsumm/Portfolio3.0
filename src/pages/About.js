@@ -9,10 +9,10 @@ export default function About() {
 
   return (
     <div className="homePage ">
-      <FontAwesomeIcon
+      {/* <FontAwesomeIcon
             icon={faAnglesUp}
             className="aboutIcon text-center"
-          />
+          /> */}
       <div className=" sm:w-1/3 w-10/12   py-5 mx-auto ">
         <p className="aboutp">
           Hi there I'm Will Summerlin, creator of this site! I am a Savannah, GA
