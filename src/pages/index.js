@@ -48,13 +48,13 @@ export default function Home() {
 
         </ScrollPage>
         <ScrollPage page={4}>
-          <Animator animation={batch(Fade(), Sticky(), MoveIn(-400, 400), )}>
+          <Animator animation={batch(Fade(), Sticky(50,40), MoveIn(-400, 400), )}>
 
             <div className="hmNew p-3 rounded ">
               <h3 className="text-white">Thanks for checking out my site! And if you'd like to connect you can shoot me an email on the Contact page up there. 👆 </h3>
             </div>
           </Animator>
-          <Animator animation={batch(Fade(), Sticky(50,70), MoveIn(400, 400), )}>
+          <Animator animation={batch(Fade(), Sticky(50,60), MoveIn(400, 400), )}>
 
             <div className="hmNew p-2 rounded ">
               <h3 className="text-white"> Or hit me up on my socials which are down here. </h3>
